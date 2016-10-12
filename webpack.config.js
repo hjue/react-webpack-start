@@ -1,9 +1,9 @@
 var webpack = require('webpack');
 var path = require('path');
 
-var BUILD_DIR = path.resolve(__dirname, 'build');
+var BUILD_DIR = path.resolve(__dirname, 'dist');
 var APP_DIR = path.resolve(__dirname, 'src/app');
-//'webpack/hot/dev-server','webpack-dev-server/client?http://localhost:8080',
+
 var config = {
   entry: {
     app: [
@@ -12,7 +12,7 @@ var config = {
   },
   output: {
     path: BUILD_DIR,
-    publicPath: "/build/",
+    publicPath: "/dist/",
     filename: 'bundle.js'
   },
 
@@ -34,6 +34,9 @@ var config = {
       {
         test: /\.svg$/,
         loader: 'file'
+      },
+      { test: /\.json$/,
+        loader: 'json'
       }
     ]
   }
