@@ -1,7 +1,14 @@
-### React with Webpack Quick Start
+## React with Webpack Quick Start
 
 
+### Install
 
     npm install
 
-    npm run dev
+### Development
+
+    npm run start
+
+### Deploy
+
+    npm run build
