@@ -25,7 +25,7 @@ var config = {
       },
       {
           test: /\.scss$/,
-          loader: 'style!css!sass!postcss-loader'
+          loader: 'style!css!postcss!sass'
       },
       {
           test: /\.(png|jpg)$/,
