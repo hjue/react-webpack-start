@@ -25,7 +25,7 @@ var config = {
       },
       {
           test: /\.scss$/,
-          loader: 'style!css!sass'
+          loader: 'style!css!sass!postcss-loader'
       },
       {
           test: /\.(png|jpg)$/,
@@ -39,6 +39,11 @@ var config = {
         loader: 'json'
       }
     ]
+  },
+  postcss: function () {
+    return [
+      require('autoprefixer')
+    ];
   }
 };
 
