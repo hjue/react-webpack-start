@@ -21,7 +21,7 @@ var config = {
       {
         test : /\.jsx?/,
         include : APP_DIR,
-        loaders: ['babel-loader?presets[]=es2015,presets[]=react']
+        loaders: ['babel-loader?presets[]=es2015,presets[]=react,presets[]=stage-1']
       },
       {
           test: /\.scss$/,
